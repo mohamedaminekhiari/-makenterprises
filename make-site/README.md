@@ -21,11 +21,7 @@ npx serve .
   `REPLACE_WITH_WEB3FORMS_ACCESS_KEY` in the `<input type="hidden" name="access_key">` line.
 - **Images**: replace the six placeholder blocks in the "Evidence room" section with real
   `<img>` tags pointing to `/public/images/...` (see checklist below).
-- **Verification flags**: search the file for `verify-tag` / "Verify before publishing" and
-  resolve those two spots (Adeo Ressi biographical specifics, Network VC affiliation sourcing)
-  before this goes live — per your own instruction not to publish unverified claims.
-- **Links**: `The Reserve Insights`, `The Reserve Capital`, and `Explore the venture journey`
-  currently point to `#` — add real URLs once available.
+- **Links**: `Own Your Fund Category™` now points to `https://cal.com/ofc-access`, general consulting points to `https://calendly.com/makofficialtm`, and direct email uses `contact.makofficial@gmail.com`.
 - **Analytics**: add your analytics snippet (e.g. Plausible or GA4) just before `</head>`.
 
 ## 4. Deploy free
@@ -44,7 +40,6 @@ No environment variables or backend required.
 
 ## 6. Open items requiring your input
 1. Web3Forms access key (or swap for Formspree / mailto fallback).
-2. Confirm or revise the Adeo Ressi biographical detail before publishing.
-3. Confirm sourcing for the "Partner within Network VC" claim, or soften to a stated
-   affiliation without a specific title until a public source is linkable.
-4. Live URLs for The Reserve Insights and The Reserve Capital, if they exist outside this site.
+2. Replace `REPLACE_WITH_WEB3FORMS_ACCESS_KEY` before enabling the contact form.
+3. Review all live links (`https://cal.com/ofc-access`, `https://calendly.com/makofficialtm`, LinkedIn, GFOIS, newsletter) after each deploy.
+4. Keep `public/assets/make-logo-cropped.png` as the active header/favicon logo asset.
